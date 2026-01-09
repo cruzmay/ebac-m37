@@ -267,5 +267,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="chatbot-container" id="chatbot-container">
+      <div class="chatbot-header">
+        <h3>Asistente Virtual</h3>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Cerrar chatbot">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="message bot-message">
+          <p>¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte?</p>
+        </div>
+      </div>
+      <div class="chatbot-input-container">
+        <input
+          type="text"
+          id="chatbot-input"
+          placeholder="Escribe tu mensaje..."
+          aria-label="Campo de entrada de mensaje"
+        />
+        <button id="chatbot-send" aria-label="Enviar mensaje">
+          <span class="material-icons">send</span>
+        </button>
+      </div>
+    </div>
+
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Abrir chatbot">
+      <span class="material-icons">smart_toy</span>
+    </button>
+
+    <script src="chatbot.js"></script>
   </body>
 </html>
