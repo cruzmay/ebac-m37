@@ -15,197 +15,206 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="container">
-        <nav class="nav">
-          <div class="logo">MiMarca</div>
-          <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#caracteristicas">Características</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+          <div class="logo" role="img" aria-label="MiMarca - Logo">MiMarca</div>
+          <ul class="nav-links" role="menubar">
+            <li role="none"><a href="#inicio" role="menuitem" aria-label="Ir a la sección de inicio">Inicio</a></li>
+            <li role="none"><a href="#caracteristicas" role="menuitem" aria-label="Ir a las características">Características</a></li>
+            <li role="none"><a href="#testimonios" role="menuitem" aria-label="Ir a los testimonios">Testimonios</a></li>
+            <li role="none"><a href="#contacto" role="menuitem" aria-label="Ir al formulario de contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero" role="banner" aria-labelledby="hero-title">
       <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Transforma tu Negocio Hoy</h1>
-          <p class="hero-subtitle">
+        <div class="hero-content" id="main-content">
+          <h1 class="hero-title" id="hero-title" tabindex="0">Transforma tu Negocio Hoy</h1>
+          <p class="hero-subtitle" tabindex="0">
             Descubre la solución que revolucionará tu forma de trabajar
           </p>
-          <p class="hero-description">
+          <p class="hero-description" tabindex="0">
             Únete a miles de empresas que ya están creciendo con nuestras
             herramientas innovadoras. Obtén resultados medibles en menos de 30
             días.
           </p>
-          <div class="cta-buttons">
-            <a href="#contacto" class="btn btn-primary">Comenzar Ahora</a>
-            <a href="#caracteristicas" class="btn btn-secondary">Saber Más</a>
+          <div class="cta-buttons" role="group" aria-label="Acciones principales">
+            <a href="#contacto" class="btn btn-primary" aria-label="Ir al formulario de contacto para comenzar">Comenzar Ahora</a>
+            <a href="#caracteristicas" class="btn btn-secondary" aria-label="Ver más información sobre nuestras características">Saber Más</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Computer CTA Section -->
-    <section class="computer-cta">
+    <section class="computer-cta" aria-labelledby="computer-cta-title">
       <div class="container">
-        <div class="computer-cta-content">
+        <article class="computer-cta-content">
           <div class="computer-cta-text">
-            <h2 class="computer-cta-title">
+            <h2 class="computer-cta-title" id="computer-cta-title" tabindex="0">
               Transforma tu Negocio con Tecnología de Vanguardia
             </h2>
-            <p class="computer-cta-description">
+            <p class="computer-cta-description" tabindex="0">
               Descubre cómo nuestras soluciones pueden revolucionar tu empresa.
               Únete a miles de empresas que ya están creciendo con nosotros.
             </p>
-            <a href="#contacto" class="btn btn-dark btn-shorten"
+            <a href="#contacto" class="btn btn-dark btn-shorten" aria-label="Ir al formulario de contacto para comenzar"
               >Comenzar Ahora</a
             >
           </div>
           <div class="computer-cta-image">
             <img
               src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-              alt="Computadora moderna"
+              alt="Computadora portátil moderna sobre escritorio con gráficos de análisis de datos en la pantalla"
               class="computer-img"
             />
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- Features Section -->
-    <section id="caracteristicas" class="features">
+    <section id="caracteristicas" class="features" aria-labelledby="features-title">
       <div class="container">
-        <h2 class="section-title">¿Por Qué Elegirnos?</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <span class="material-icons">flash_on</span>
+        <h2 class="section-title" id="features-title" tabindex="0">¿Por Qué Elegirnos?</h2>
+        <div class="features-grid" role="list">
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <span class="material-icons" aria-hidden="true">flash_on</span>
             </div>
-            <h3>Rápido y Eficiente</h3>
-            <p>
+            <h3 tabindex="0">Rápido y Eficiente</h3>
+            <p tabindex="0">
               Implementación en menos de 24 horas. Resultados desde el primer
               día.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <span class="material-icons">security</span>
+          </article>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <span class="material-icons" aria-hidden="true">security</span>
             </div>
-            <h3>100% Seguro</h3>
-            <p>
+            <h3 tabindex="0">100% Seguro</h3>
+            <p tabindex="0">
               Protección de datos de nivel empresarial. Cumplimiento con todas
               las normativas.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <span class="material-icons">trending_up</span>
+          </article>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <span class="material-icons" aria-hidden="true">trending_up</span>
             </div>
-            <h3>Resultados Comprobados</h3>
-            <p>
+            <h3 tabindex="0">Resultados Comprobados</h3>
+            <p tabindex="0">
               Aumenta tu productividad hasta un 300%. Casos de éxito
               verificados.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <span class="material-icons">support_agent</span>
+          </article>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <span class="material-icons" aria-hidden="true">support_agent</span>
             </div>
-            <h3>Soporte 24/7</h3>
-            <p>Equipo de expertos disponible en todo momento para ayudarte.</p>
-          </div>
+            <h3 tabindex="0">Soporte 24/7</h3>
+            <p tabindex="0">Equipo de expertos disponible en todo momento para ayudarte.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonios" class="testimonials">
+    <section id="testimonios" class="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
-        <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
+        <h2 class="section-title" id="testimonials-title" tabindex="0">Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonials-grid" role="list">
+          <article class="testimonial-card" role="listitem">
             <div class="testimonial-header">
               <img
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                alt="María González"
+                alt="Foto de María González, CEO de TechSolutions"
                 class="testimonial-image"
               />
               <div class="testimonial-author">
-                <strong>María González</strong>
-                <span>CEO, TechSolutions</span>
+                <strong tabindex="0">María González</strong>
+                <span tabindex="0">CEO, TechSolutions</span>
               </div>
             </div>
-            <p class="testimonial-text">
+            <blockquote class="testimonial-text" cite="María González" tabindex="0">
               "Increíble transformación en nuestro negocio. Los resultados
               superaron todas nuestras expectativas."
-            </p>
-          </div>
-          <div class="testimonial-card">
+            </blockquote>
+          </article>
+          <article class="testimonial-card" role="listitem">
             <div class="testimonial-header">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                alt="Carlos Rodríguez"
+                alt="Foto de Carlos Rodríguez, Director de InnovateCorp"
                 class="testimonial-image"
               />
               <div class="testimonial-author">
-                <strong>Carlos Rodríguez</strong>
-                <span>Director, InnovateCorp</span>
+                <strong tabindex="0">Carlos Rodríguez</strong>
+                <span tabindex="0">Director, InnovateCorp</span>
               </div>
             </div>
-            <p class="testimonial-text">
+            <blockquote class="testimonial-text" cite="Carlos Rodríguez" tabindex="0">
               "La mejor inversión que hemos hecho. El ROI fue visible desde el
               primer mes."
-            </p>
-          </div>
-          <div class="testimonial-card">
+            </blockquote>
+          </article>
+          <article class="testimonial-card" role="listitem">
             <div class="testimonial-header">
               <img
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                alt="Ana Martínez"
+                alt="Foto de Ana Martínez, Fundadora de StartupHub"
                 class="testimonial-image"
               />
               <div class="testimonial-author">
-                <strong>Ana Martínez</strong>
-                <span>Fundadora, StartupHub</span>
+                <strong tabindex="0">Ana Martínez</strong>
+                <span tabindex="0">Fundadora, StartupHub</span>
               </div>
             </div>
-            <p class="testimonial-text">
+            <blockquote class="testimonial-text" cite="Ana Martínez" tabindex="0">
               "Soporte excepcional y resultados inmediatos. Altamente
               recomendado."
-            </p>
-          </div>
+            </blockquote>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section id="contacto" class="cta-section">
+    <section id="contacto" class="cta-section" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-content">
-          <h2 class="cta-title">¿Listo para Comenzar?</h2>
-          <p class="cta-description">
+          <h2 class="cta-title" id="cta-title" tabindex="0">¿Listo para Comenzar?</h2>
+          <p class="cta-description" tabindex="0">
             Únete a nuestra comunidad hoy y obtén acceso exclusivo a recursos
             premium. Sin compromiso, cancela cuando quieras.
           </p>
-          <form class="cta-form" action="#" method="POST">
+          <form class="cta-form" action="#" method="POST" aria-label="Formulario de contacto">
+            <label for="email-input" class="visually-hidden">Dirección de correo electrónico</label>
             <input
               type="email"
+              id="email-input"
+              name="email"
               placeholder="Ingresa tu email"
               required
               class="form-input"
+              aria-required="true"
+              aria-describedby="email-description"
             />
-            <button type="submit" class="btn btn-primary btn-large">
+            <span id="email-description" class="visually-hidden">Ingresa tu dirección de correo electrónico para obtener acceso</span>
+            <button type="submit" class="btn btn-primary btn-large" aria-label="Enviar formulario para obtener acceso gratis">
               Obtener Acceso Gratis
             </button>
           </form>
-          <p class="cta-note">
-            <span class="material-icons">lock</span>
+          <p class="cta-note" role="note" aria-label="Información de privacidad" tabindex="0">
+            <span class="material-icons" aria-hidden="true">lock</span>
             Tu información está segura. No enviamos spam.
           </p>
         </div>
@@ -213,15 +222,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h4>MiMarca</h4>
-            <p>Transformando negocios desde 1920</p>
+            <h4 tabindex="0">MiMarca</h4>
+            <p tabindex="0">Transformando negocios desde 1920</p>
           </div>
           <div class="footer-section">
-            <h4>Enlaces</h4>
+            <h4 tabindex="0">Enlaces</h4>
             <ul>
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#caracteristicas">Características</a></li>
@@ -229,13 +238,13 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Contacto</h4>
-            <p>Email: contacto@mimarca.com</p>
-            <p>Teléfono: +1 (555) 123-4567</p>
+            <h4 tabindex="0">Contacto</h4>
+            <p tabindex="0">Email: contacto@mimarca.com</p>
+            <p tabindex="0">Teléfono: +1 (555) 123-4567</p>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 MiMarca. Todos los derechos reservados.</p>
+          <p tabindex="0">&copy; 2026 MiMarca. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
